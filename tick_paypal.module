@@ -1,0 +1,12 @@
+<?php
+
+use Drupal\views\ViewExecutable;
+
+function tick_paypal_preprocess_views_view(&$variables) {
+  if(\Drupal::routeMatch()->getRouteName() == 'view.commerce_order_payments.page_1'){
+    $datos = 'payment';
+    $variables['#attached']['library'] = 'tick_paypal/tick_paypal';
+    $variables['#attached']['drupalSettings']['datos']['tick_paypal']= $datos;
+  }
+
+}

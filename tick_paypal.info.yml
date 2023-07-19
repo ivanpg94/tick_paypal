@@ -1,0 +1,5 @@
+name: Custom Module Tick Paypal
+type: module
+description: Agrega un tick o error a los pagos de Paypal".
+package: Custom
+core_version_requirement: 8.x || 9.x

@@ -1,0 +1,8 @@
+tick_paypal:
+  version: 1.x
+  js:
+    js/tick_paypal.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupalSettings
